@@ -1,0 +1,13 @@
+[user]
+	name = cloudsben
+	email = cloudsben@gmail.com
+[color]
+	ui = true
+[core]
+	filemode = false
+	autocrlf = input
+	editor = emacs
+	excludesfile = ~/.gitignore_global
+	whitespace = -trailing-space
+[push]
+	default = simple
