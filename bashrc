@@ -15,7 +15,6 @@ source ~/.bash-git/git-prompt.sh
 export GIT_PS1_SHOWDIRTYSTATE=true
 export GIT_PS1_SHOWUNTRACKEDFILES=true
 PS1='\[\e[36;1m\]\u:\[\e[32;1m\]\w\[\e[33;1m\]$(__git_ps1 " (%s)")\[\e[0m\]$ '
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for
 
 export PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/mysql/bin
 export LC_CTYPE=en_US.UTF-8
@@ -23,3 +22,6 @@ export LC_ALL=en_US.UTF-8
 export CLICOLOR=1
 bind "set completion-ignore-case on"
 bind "set show-all-if-ambiguous on"
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
