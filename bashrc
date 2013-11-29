@@ -1,14 +1,14 @@
 # nginx config
-alias startnginx="sudo /usr/local/openresty/nginx/sbin/nginx"
-alias stopnginx="sudo /usr/local/openresty/nginx/sbin/nginx -s stop"
-alias restartnginx="sudo /usr/local/openresty/nginx/sbin/nginx -s reopen"
-alias reloadnginx="sudo /usr/local/openresty/nginx/sbin/nginx -s reload"
+alias startnginx="sudo /usr/local/bin/nginx"
+alias stopnginx="sudo /usr/local/bin/nginx -s stop"
+alias restartnginx="sudo /usr/local/bin/nginx -s reopen"
+alias reloadnginx="sudo /usr/local/bin/nginx -s reload"
 # php-fpm config
-alias startfpm="sudo /usr/local/openresty/php-5.4.16/sapi/fpm/init.d.php-fpm start"
-alias stopfpm="sudo /usr/local/openresty/php-5.4.16/sapi/fpm/init.d.php-fpm stop"
-alias forcefpm="sudo /usr/local/openresty/php-5.4.16/sapi/fpm/init.d.php-fpm force-quit"
-alias restartfpm="sudo /usr/local/openresty/php-5.4.16/sapi/fpm/init.d.php-fpm restart"
-alias reloadfpm="sudo /usr/local/openresty/php-5.4.16/sapi/fpm/init.d.php-fpm reload"
+alias startfpm="sudo /usr/sbin/php-fpm start"
+alias stopfpm="sudo /usr/sbin/php-fpm stop"
+alias forcefpm="sudo /usr/sbin/php-fpm force-quit"
+alias restartfpm="sudo /usr/sbin/php-fpm restart"
+alias reloadfpm="sudo /usr/sbin/php-fpm reload"
 
 source ~/.bash-git/git-completion.bash
 source ~/.bash-git/git-prompt.sh
