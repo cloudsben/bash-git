@@ -6,8 +6,10 @@
 [core]
 	filemode = false
 	autocrlf = input
-	editor = emacs
+	editor = subl -w
 	excludesfile = ~/.gitignore_global
 	whitespace = -trailing-space
 [push]
 	default = simple
+[alias]
+	co = checkout

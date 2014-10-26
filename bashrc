@@ -1,14 +1,17 @@
+# login my linode
+alias loginmylinode="ssh cloudsben@XXX.XXX"
+
 # nginx config
-alias startnginx="sudo /usr/local/bin/nginx"
-alias stopnginx="sudo /usr/local/bin/nginx -s stop"
-alias restartnginx="sudo /usr/local/bin/nginx -s reopen"
-alias reloadnginx="sudo /usr/local/bin/nginx -s reload"
-# php-fpm config
-alias startfpm="sudo /usr/sbin/php-fpm start"
-alias stopfpm="sudo /usr/sbin/php-fpm stop"
-alias forcefpm="sudo /usr/sbin/php-fpm force-quit"
-alias restartfpm="sudo /usr/sbin/php-fpm restart"
-alias reloadfpm="sudo /usr/sbin/php-fpm reload"
+#alias startnginx="sudo /usr/local/bin/nginx"
+#alias stopnginx="sudo /usr/local/bin/nginx -s stop"
+#alias restartnginx="sudo /usr/local/bin/nginx -s reopen"
+#alias reloadnginx="sudo /usr/local/bin/nginx -s reload"
+## php-fpm config
+#alias startfpm="sudo /usr/sbin/php-fpm start"
+#alias stopfpm="sudo /usr/sbin/php-fpm stop"
+#alias forcefpm="sudo /usr/sbin/php-fpm force-quit"
+#alias restartfpm="sudo /usr/sbin/php-fpm restart"
+#alias reloadfpm="sudo /usr/sbin/php-fpm reload"
 
 source ~/.bash-git/git-completion.bash
 source ~/.bash-git/git-prompt.sh
@@ -23,5 +26,5 @@ export CLICOLOR=1
 bind "set completion-ignore-case on"
 bind "set show-all-if-ambiguous on"
 
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+# use sublime default editor 
+export EDITOR='subl -w'
