@@ -1,4 +1,4 @@
-# Login my servers
+# servers
 alias loginmylinode="ssh cloudsben@mylinode"
 alias loginaliyun="ssh cloudsben@myaliyun"
 
@@ -21,3 +21,8 @@ bind "set show-all-if-ambiguous on"
 
 # use sublime default editor 
 export EDITOR='subl -w'
+
+# if tmux not have session run this command
+if [[ $SHLVL != "2" ]]; then
+  tmux attach || tmux new
+fi

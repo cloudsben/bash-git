@@ -1,4 +1,4 @@
-bash-git
+# bash-git
 ========
 
 My bashrc and git profile
