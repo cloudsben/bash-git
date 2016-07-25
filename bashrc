@@ -1,7 +1,6 @@
 # servers
-alias loginmylinode="ssh cloudsben@mylinode"
-alias loginaliyun="ssh cloudsben@myaliyun"
-
+alias loginaliyun="ssh cloudsben@121.42.215.14"
+alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
 
 # Git config
 source ~/.bash-git/git-completion.bash
@@ -20,9 +19,10 @@ bind "set completion-ignore-case on"
 bind "set show-all-if-ambiguous on"
 
 # use sublime default editor 
-export EDITOR='subl -w'
+
 
 # if tmux not have session run this command
-if [[ $SHLVL != "2" ]]; then
-  tmux attach || tmux new
-fi
+# if [[ $SHLVL != "2" ]]; then
+#   tmux attach || tmux new
+# fi
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi

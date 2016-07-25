@@ -5,11 +5,15 @@
 	ui = true
 [core]
 	filemode = false
-	autocrlf = input
-	editor = subl -w
+	autocrlf = false
+	editor = vim
 	excludesfile = ~/.gitignore_global
 	whitespace = -trailing-space
 [push]
 	default = simple
 [alias]
 	co = checkout
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
